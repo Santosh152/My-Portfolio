@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Side bar */
+.sidebar{
+    background-color: rgb(210, 205, 205);
+    font-family: 'Fira Sans', sans-serif;
+    height: 100%;
+    transition: transform 0.4s ease-in;
+    position: absolute;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar h2{
+    font-size: 33px;
+    margin: 40px 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.sidebar nav{
+    padding: 10px 40px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 28px;
+    padding: 24px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /* background-color: yellow; */
+    width: 98vw;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /* background-color: blueviolet; */
+    height: 58vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devinfo{
+    font-size: 11.5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    margin: 60px;
+}
+
+.hello{
+    font-size: 2.5em;
+}
+.name{
+    font-size: 2.3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about{
+    font-size: 2em;
+}
+.moreabout{
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    padding: 6px 15px;
+    border-radius: 23px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 0px 3px;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+#btn-sm{
+    font-size: 12px;
+    padding: 8px 13px;
+    margin: 6px 0;
+}
+.devpic img{
+    height: 58vh;
+}
+footer{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: rgb(9, 9, 9);
+    background-color: rgb(127, 126, 126);
+    font-family: 'Nunito', sans-serif;
+}
+.footeritem img{
+    margin-right: 23px;
+    width: 25px;
+}
+/* Contact me */
+.contactform{
+    padding: 0 34px;
+    padding-top: 40px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 88px;
+    font-weight: 900;
+}
+.contactform h1{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 12px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+   width: 30vw;
+   border-radius: 5px;
+   margin: 6px 0;
+   padding: 3px;
+}
+#emailHelp{
+    font-size: 12px ;
+    color: rgb(180, 180, 186);
+    margin: 0 4px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 2px 0;
+}
+
+/* Projects */
+.projectcontainer{
+    margin: 60px 134px;
+    display: flex;
+    flex-direction: column;
+}
+.projectitem{
+    margin: 4px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.projectitem h2{
+    margin-top: 10px;
+}
+.projectitem img{
+    width: 60vw;
+}
+.projectcontainer h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 8px;
+}
+.projectitem p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60em;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Intro */
+.introcontainer{
+    margin: 40px 88px;
+}
+.introcontainer h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 8px;
+    padding: 4px 0;
+}
+.introcontainer p{
+    font-size: 1.3em;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px;
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skillitem{
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    padding: 2px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+.skill{
+    margin-top: 2px;
+    width: 265px;
+    height: 8px;
+    background-color: red;
+}
+.ninty{
+    width: 240px;
+    background-color: red;
+}
+.sixty{
+    width: 130px;
+    background-color: green;
+}
+.fourty{
+    width: 100px;
+    background-color: yellow;
+}
+
+.sidebargo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 180px;
+}
+
+/* Services */
+.servicescontainer{
+    margin: 30px 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.servicesitem{
+    margin: 0 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.servicescontainer h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 4px;
+}
+.servicesitem h2{
+    margin-top: 10px;
+}
+.servicesitem img{
+    width: 134px;
+}
+.servicesitem p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+    font-family: 'Nunito', sans-serif;
+}
+#servicesheading{
+    margin: 60px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+@media (max-width:1326px){
+    .devinfo{
+        font-size: 10px;
+        margin: 60px 0;
+    }
+    .devpic img{
+        display: none;
+    }
+     .projectcontainer, .servicescontainer{
+        margin: 50px 8px;
+    }
+    .buttons{
+        font-size: 11px;
+    }
+    .infocontainer{
+        margin: 60px 0px 300px 35px;
+    }
+    .introcontainer{
+        font-size: 0.8em;
+        margin: 50px 18px 100px 18px;
+    }
+    .contactform{
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .contactform form{
+        margin: 35px 30px;
+    }
+    .contactform form div input{
+        width: 60vw;
+    }
+    .projectitem p{
+        width: 30em;
+    }
+    .servicesitem{
+        padding: 25px 0;
+        margin: 20;
+    }
+    .servicescontainer img{
+        width: 80px;
+    }
+    .servicesitem p{
+        width: 20em;
+        flex-wrap: wrap;
+        margin: 6px 23px;
+    }
+    .servicescontainer{
+        width: 26em;
+        margin: -53px 0px 100px 19px;
+        flex-wrap: wrap;
+    }
+}
